@@ -6,7 +6,7 @@ error=$(common_dir)/logs/$(Cluster).$(Process).err
 log=$(common_dir)/logs/$(Cluster).$(Process).log
 request_cpus = 20
 request_memory = 96 GB
-notify_user = letaw@ohsu.edu
+notify_user = user@email
 notification = Error
 queue 1
 
