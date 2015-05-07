@@ -1,0 +1,18 @@
+common_dir=/home/groups/clinical/RichardsLab/letaw/trio_pipeline
+executable=$(common_dir)/trio_pipeline.sh
+arguments=$(common_dir)/raw/na12878_r1.fastq $(common_dir)/raw/na12878_r2.fastq na12878 child
+output=$(common_dir)/logs/$(Cluster).$(Process).out
+error=$(common_dir)/logs/$(Cluster).$(Process).err
+log=$(common_dir)/logs/$(Cluster).$(Process).log
+request_cpus = 20
+request_memory = 96 GB
+notify_user = user@email
+notification = Error
+queue 1
+
+#arguments=$(common_dir)/raw/na12891_r1.fastq $(common_dir)/raw/na12891_r2.fastq na12891 father
+#queue 1
+
+#arguments=$(common_dir)/raw/na12892_r1.fastq $(common_dir)/raw/na12892_r2.fastq na12892 mother
+#queue 1
+
